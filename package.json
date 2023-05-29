@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "chrome-types": "^0.1.198",
+    "jquery": "^3.7.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  }
+}

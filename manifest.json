@@ -1,0 +1,61 @@
+{
+  "manifest_version": 3,
+  "name": "DrawOnWebpage",
+  "description": "Draw on a Webpage",
+  "version": "0.2.5.1",
+  "icons": {
+    "128": "icon.png"
+  },
+  "action": {
+    
+    
+    "default_icon": "icon.png",
+    "default_title": "DrawOnWebpage"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        
+        
+        "./dist/main.js"
+      ],
+      
+      
+      
+      "matches": [
+        
+        
+        "http://*/*",
+        "https://*/*",
+        "file:///*/*"
+        
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "./scripts/background.js"
+    
+    
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+    
+  ],
+  
+  
+  
+  "commands": {
+    "activate-ext": {
+      "suggested_key": {
+        "default": "Alt+Shift+G"
+        
+      },
+      "description": "activate-ext"
+    }
+  },
+  "options_page": "./scripts/options.html"
+  
+  
+  
+}
